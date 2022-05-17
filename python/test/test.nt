@@ -1,0 +1,13 @@
+<http://bdma.upc.abc/person/rrr12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://bdma.upc.abc/paper/ppp1> <http://schema.bdma.upc.abc/publishedIn> <http://bdma.upc.abc/conference/ccc1> .
+<http://bdma.upc.abc/person/rrr21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://bdma.upc.abc/person/rrr22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://bdma.upc.abc/person/aaa1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://bdma.upc.abc/paper/ppp1> <http://schema.bdma.upc.abc/reviewedBy> <http://bdma.upc.abc/conference/rrr11> .
+<http://bdma.upc.abc/person/rrr11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://bdma.upc.abc/paper/ppp2> <http://schema.bdma.upc.abc/reviewedBy> <http://bdma.upc.abc/conference/rrr22> .
+<http://bdma.upc.abc/paper/ppp2> <http://schema.bdma.upc.abc/publishedIn> <http://bdma.upc.abc/conference/ccc2> .
+<http://bdma.upc.abc/paper/ppp1> <http://schema.bdma.upc.abc/reviewedBy> <http://bdma.upc.abc/conference/rrr12> .
+<http://bdma.upc.abc/person/aaa2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://bdma.upc.abc/paper/ppp2> <http://schema.bdma.upc.abc/reviewedBy> <http://bdma.upc.abc/conference/rrr21> .
+
