@@ -16,3 +16,7 @@ https://jena.apache.org/tutorials/rdf_api.html
 
 To understand Jena Ontology API:
 https://jena.apache.org/documentation/ontology/#instances-or-individuals
+
+#### For Python refer to 
+https://rdflib.readthedocs.io/en/stable/#getting-started
+https://stackoverflow.com/questions/43524943/creating-rdf-file-using-csv-file-as-input

@@ -19,10 +19,18 @@ public class main {
         OntModel m = ModelFactory.createOntologyModel( OntModelSpec.RDFS_MEM_RDFS_INF );
 
         // Classes
+        OntClass full_paper = m.createClass( NS + "Full_Paper" );
+        OntClass short_paper = m.createClass( NS + "Short_Paper" );
+        OntClass demo_paper = m.createClass( NS + "Demo_Paper");
+        OntClass poster = m.createClass( NS + "Poster" );
         OntClass paper = m.createClass( NS + "Paper" );
+
+        OntClass author = m.createClass( NS + "Author" );
         OntClass venue = m.createClass( NS + "Venue" );
         OntClass conference = m.createClass( NS + "Conference" );
         OntClass journal = m.createClass( NS + "Journal" );
+
+        OntClass area_keyword = m.createClass( NS + "Area_KeyWord" );
         OntClass reviewer = m.createClass( NS + "Reviewer" );
         OntClass chair = m.createClass( NS + "Chair");
         OntClass editor = m.createClass(NS + "Editor");
@@ -33,6 +41,10 @@ public class main {
         OntClass journalVolume = m.createClass(NS + "Journal-Volume");
 
         // Connecting Classes to sub-Classes
+        paper.addSubClass( poster );
+        paper.addSubClass( demo_paper );
+        paper.addSubClass( short_paper );
+        paper.addSubClass( full_paper );
         venue.addSubClass( conference );
         venue.addSubClass( journal );
 
@@ -40,6 +52,7 @@ public class main {
         publications.addSubClass( journalVolume );
 
         // Properties
+        OntProperty hasKeyword = m.createOntProperty(NS + "hasKeyword");
         OntProperty submittedTo = m.createOntProperty(NS + "SubmitTo");
         OntProperty assignedReviewers = m.createOntProperty(NS + "AssignedReviewers");
         OntProperty cHandledBy = m.createOntProperty(NS + "Conf-Handled-By");
@@ -47,8 +60,13 @@ public class main {
         OntProperty decision = m.createOntProperty(NS + "Decision");
         OntProperty decisionText = m.createOntProperty(NS + "Decision-Text");
         OntProperty publishedIn = m.createOntProperty(NS + "Published-In");
+        OntProperty writesA = m.createOntProperty(NS + "Writes-A");
 
         // Connecting properties to classes
+        writesA.addDomain( paper );
+        writesA.addRange( author );
+        hasKeyword.addDomain( paper );
+        hasKeyword.addRange( area_keyword );
         submittedTo.addDomain( paper );
         submittedTo.addRange( venue );
         submittedTo.addLabel("Paper is submitted to venue", "en");
@@ -76,51 +94,52 @@ public class main {
     }
 
     public static void main (String args[]) {
-
-        // some definitions
-        String personURI    = "http://somewhere/JohnSmith/#";
-        String givenName    = "John";
-        String familyName   = "Smith";
-        String fullName     = givenName + " " + familyName;
-
-        // create an empty model
-        Model model = ModelFactory.createDefaultModel();
-
-        // create the resource
-        //   and add the properties cascading style
-        Resource johnSmith
-                = model.createResource(personURI)
-                .addProperty(VCARD.FN, fullName)
-                .addProperty(VCARD.N,
-                        model.createResource()
-                                .addProperty(VCARD.Given, givenName)
-                                .addProperty(VCARD.Family, familyName));
-
-        // list the statements in the graph
-        StmtIterator iter = model.listStatements();
-
-        // print out the predicate, subject and object of each statement
-        while (iter.hasNext()) {
-            Statement stmt      = iter.nextStatement();         // get next statement
-            Resource  subject   = stmt.getSubject();   // get the subject
-            Property  predicate = stmt.getPredicate(); // get the predicate
-            RDFNode   object    = stmt.getObject();    // get the object
-
-            System.out.print(subject.toString());
-            System.out.print(" " + predicate.toString() + " ");
-            if (object instanceof Resource) {
-                System.out.print(object.toString());
-            } else {
-                // object is a literal
-                System.out.print(" \"" + object.toString() + "\"");
-            }
-            System.out.println(" .");
-        }
-
-        // now write the model in XML form to a file
-        model.write( System.out);
-        // now write the model in a pretty form
-//        RDFDataMgr.write(System.out, model, Lang.RDFXML);
+//
+        createOntology();
+//        // some definitions
+//        String personURI    = "http://somewhere/JohnSmith/#";
+//        String givenName    = "John";
+//        String familyName   = "Smith";
+//        String fullName     = givenName + " " + familyName;
+//
+//        // create an empty model
+//        Model model = ModelFactory.createDefaultModel();
+//
+//        // create the resource
+//        //   and add the properties cascading style
+//        Resource johnSmith
+//                = model.createResource(personURI)
+//                .addProperty(VCARD.FN, fullName)
+//                .addProperty(VCARD.N,
+//                        model.createResource()
+//                                .addProperty(VCARD.Given, givenName)
+//                                .addProperty(VCARD.Family, familyName));
+//
+//        // list the statements in the graph
+//        StmtIterator iter = model.listStatements();
+//
+//        // print out the predicate, subject and object of each statement
+//        while (iter.hasNext()) {
+//            Statement stmt      = iter.nextStatement();         // get next statement
+//            Resource  subject   = stmt.getSubject();   // get the subject
+//            Property  predicate = stmt.getPredicate(); // get the predicate
+//            RDFNode   object    = stmt.getObject();    // get the object
+//
+//            System.out.print(subject.toString());
+//            System.out.print(" " + predicate.toString() + " ");
+//            if (object instanceof Resource) {
+//                System.out.print(object.toString());
+//            } else {
+//                // object is a literal
+//                System.out.print(" \"" + object.toString() + "\"");
+//            }
+//            System.out.println(" .");
+//        }
+//
+//        // now write the model in XML form to a file
+//        model.write( System.out);
+//        // now write the model in a pretty form
+////        RDFDataMgr.write(System.out, model, Lang.RDFXML);
 
     }
 }
