@@ -23,6 +23,8 @@ if __name__ == '__main__':
         df_paper = pd.read_csv("data/processed/small/Paper.csv")
         df_author_link_paper = pd.read_csv("data/processed/small/writesA.csv")
         df_hasReview = pd.read_csv("data/processed/small/hasReview.csv")
+        df_keyword = pd.read_csv("data/processed/small/Keyword.csv")
+        df_hasKeyword = pd.read_csv("data/processed/small/hasKeyword.csv")
     else:
         df = pd.read_csv("data/raw/papers_data.csv")
 
@@ -39,6 +41,7 @@ if __name__ == '__main__':
     reviewerIRI = URIRef(NS + "reviewer")
     hasDecisionIRI = URIRef(NS + "hasDecision")
     hasTextIRI = URIRef(NS + "hasText")
+    hasKeywordIRI = URIRef(NS + "hasKeyword")
 
     # AssignedReviewerTbox = URIRef("http://www.upc.abc/#Assigned_Reviewer")
 
@@ -48,6 +51,7 @@ if __name__ == '__main__':
     ######################################################
     # Code Section
     ######################################################
+    # Link author with paper
     df = pd.merge(df_author, df_author_link_paper, on="author_id" )
     df = pd.merge(df, df_paper, on="paper_id")
     for _, row in df.iterrows():
@@ -69,7 +73,7 @@ if __name__ == '__main__':
         g.add((authorIRI, writesAIRI, paperIRI))
         g.add((authorIRI, authorNameIRI, Literal(author_name)))
 
-
+    # link paper with review
     df = pd.merge(df_hasReview, df_paper, on='paper_id')
     df = pd.merge(df, df_author, left_on="reviewer_id", right_on='author_id')
     for _, row in df.iterrows():
@@ -90,11 +94,25 @@ if __name__ == '__main__':
         g.add((reviewIRI, RDF.type, ReviewTbox))
         g.add((authorIRI, RDF.type, AuthorTbox))  # Should not be required in case of full data
 
-        # Connect instances of TBOX (ABOXes) via properties
+        # Connect ABOXes (instances of TBOXes) via properties
         g.add((paperIRI, hasReviewIRI, reviewIRI))
         g.add((reviewIRI, reviewerIRI, authorIRI))
         g.add((reviewIRI, hasDecisionIRI, Literal(review_text) ))
         g.add((reviewIRI, hasTextIRI, Literal(decision) ))
+
+    # link paper with keyword
+    df = pd.merge(df_keyword, df_hasKeyword, on='keyword_id')
+    df = pd.merge(df, df_paper, on='paper_id')
+    for _, row in df.iterrows():
+
+        paper_name = make_str_url_friendly(row["paper_title"])
+        keyword = row["keyword_name"]
+        # Class IRI
+        paperIRI = URIRef(FullPaperTbox + "/" + paper_name)
+
+        # Connect instances of TBOX (ABOXes) via properties
+        g.add((paperIRI, hasKeywordIRI, Literal(keyword)))
+
 
     print(" --- Completed Graph ---")
     print(f'file location: {join(OUTPUT_DIR, "test-auth-n-paper.nt")}')

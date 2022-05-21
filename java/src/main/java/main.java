@@ -6,6 +6,8 @@ import org.apache.jena.ontology.*;
 import org.apache.jena.vocabulary.*;
 import org.apache.jena.riot.*;
 
+import static org.apache.jena.vocabulary.RDFSyntax.literal;
+
 /** Tutorial 1 creating a simple model
  */
 
@@ -31,14 +33,13 @@ public class main {
         OntClass journal = m.createClass( NS + "Journal" );
 
         OntClass area_keyword = m.createClass( NS + "Area_KeyWord" );
-        OntClass reviewer = m.createClass( NS + "Reviewer" );
         OntClass chair = m.createClass( NS + "Chair");
         OntClass editor = m.createClass(NS + "Editor");
-        OntClass acceptOrReject = m.createClass(NS + "Accept-Or-Reject");
-        OntClass reviewText = m.createClass(NS + "Review-Text");
         OntClass publications = m.createClass(NS + "Publications");
         OntClass conferenceProceedings = m.createClass(NS + "Conference-Proceedings");
         OntClass journalVolume = m.createClass(NS + "Journal-Volume");
+
+        OntClass review = m.createClass(NS + "Review");
 
         // Connecting Classes to sub-Classes
         paper.addSubClass( poster );
@@ -54,11 +55,12 @@ public class main {
         // Properties
         OntProperty hasKeyword = m.createOntProperty(NS + "hasKeyword");
         OntProperty submittedTo = m.createOntProperty(NS + "submitTo");
-        OntProperty assignedReviewers = m.createOntProperty(NS + "assignedReviewers");
         OntProperty cHandledBy = m.createOntProperty(NS + "cHandledBy");
         OntProperty jHandledBy = m.createOntProperty(NS + "jHandledBy");
-        OntProperty decision = m.createOntProperty(NS + "decision");
-        OntProperty decisionText = m.createOntProperty(NS + "decisionText");
+        OntProperty hasReview = m.createOntProperty(NS + "hasReview");
+        OntProperty reviewer = m.createOntProperty(NS + "reviewer");
+        OntProperty hasDecision = m.createOntProperty(NS + "hasDecision");
+        OntProperty hasText = m.createOntProperty(NS + "hasText");
         OntProperty publishedIn = m.createOntProperty(NS + "publishedIn");
         OntProperty writesA = m.createOntProperty(NS + "writesA");
         OntProperty authorName = m.createOntProperty(NS + "authorName");
@@ -74,8 +76,8 @@ public class main {
         submittedTo.addRange( venue );
         submittedTo.addLabel("Paper is submitted to venue", "en");
 
-        assignedReviewers.addDomain( paper );
-        assignedReviewers.addRange( reviewer );
+        hasReview.addDomain( paper );
+        hasReview.addRange( review );
 
         cHandledBy.addDomain( conference );
         cHandledBy.addRange( chair );
@@ -83,11 +85,14 @@ public class main {
         jHandledBy.addDomain( journal );
         jHandledBy.addRange( editor );
 
-        decision.addDomain( paper );
-        decision.addRange( acceptOrReject );
+        reviewer.addDomain( review );
+        reviewer.addRange( author );
 
-        decisionText.addDomain( acceptOrReject );
-        decisionText.addRange( reviewText );
+        hasDecision.addDomain( review );
+        hasDecision.addRange( RDFS.Literal );
+
+        hasText.addDomain( review );
+        hasText.addRange( RDFS.Literal );
 
         publishedIn.addDomain( paper );
         publishedIn.addRange( publications );
