@@ -53,18 +53,21 @@ public class main {
 
         // Properties
         OntProperty hasKeyword = m.createOntProperty(NS + "hasKeyword");
-        OntProperty submittedTo = m.createOntProperty(NS + "SubmitTo");
-        OntProperty assignedReviewers = m.createOntProperty(NS + "AssignedReviewers");
-        OntProperty cHandledBy = m.createOntProperty(NS + "Conf-Handled-By");
-        OntProperty jHandledBy = m.createOntProperty(NS + "Jour-Handled-By");
-        OntProperty decision = m.createOntProperty(NS + "Decision");
-        OntProperty decisionText = m.createOntProperty(NS + "Decision-Text");
-        OntProperty publishedIn = m.createOntProperty(NS + "Published-In");
-        OntProperty writesA = m.createOntProperty(NS + "Writes-A");
+        OntProperty submittedTo = m.createOntProperty(NS + "submitTo");
+        OntProperty assignedReviewers = m.createOntProperty(NS + "assignedReviewers");
+        OntProperty cHandledBy = m.createOntProperty(NS + "cHandledBy");
+        OntProperty jHandledBy = m.createOntProperty(NS + "jHandledBy");
+        OntProperty decision = m.createOntProperty(NS + "decision");
+        OntProperty decisionText = m.createOntProperty(NS + "decisionText");
+        OntProperty publishedIn = m.createOntProperty(NS + "publishedIn");
+        OntProperty writesA = m.createOntProperty(NS + "writesA");
+        OntProperty authorName = m.createOntProperty(NS + "authorName");
 
         // Connecting properties to classes
-        writesA.addDomain( paper );
-        writesA.addRange( author );
+        authorName.addDomain( author );
+        authorName.addRange( RDFS.Literal );
+        writesA.addDomain( author );
+        writesA.addRange( paper );
         hasKeyword.addDomain( paper );
         hasKeyword.addRange( area_keyword );
         submittedTo.addDomain( paper );

@@ -1,6 +1,9 @@
 # SDM Lab 3
 
-### Queries
+context of our graph:
+
+
+### Questions/ Queries
 #### Context:
 - Link: https://jena.apache.org/documentation/ontology/#instances-or-individuals
 - heading on the page: Ontology languages and the Jena Ontology API
@@ -9,6 +12,22 @@ The predicate names defined in the ontology language correspond to the accessor 
 
 What does the above mean?
 
+## Notes on Knowledge Graphs
+
+### SPARQL 
+`a` can be used as a predicate to mean `http://www.w3.org/1999/02/22-rdf-syntax-ns#type`, 
+which we also know as `rdf:type`
+
+## Query keywords
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?a ?b WHERE 
+{ 
+    ?paper a NS:Paper .
+    ?paper NS:HasKeyword ?area_keyword .
+    ?area_keyword NS:keyname "ML"
+    
+} LIMIT 50
 
 ### Resources:
 To understand Java Jena API:
