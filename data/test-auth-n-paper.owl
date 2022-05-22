@@ -1,0 +1,84 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <rdfs:Class rdf:about="http://www.upc.abc/#Paper"/>
+  <rdfs:Class rdf:about="http://www.upc.abc/#Area_KeyWord"/>
+  <rdfs:Class rdf:about="http://www.upc.abc/#Venue"/>
+  <rdfs:Class rdf:about="http://www.upc.abc/#Author"/>
+  <rdfs:Class rdf:about="http://www.upc.abc/#Conference-Proceedings">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.upc.abc/#Publications"/>
+    </rdfs:subClassOf>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.upc.abc/#Chair"/>
+  <rdfs:Class rdf:about="http://www.upc.abc/#Editor"/>
+  <rdfs:Class rdf:about="http://www.upc.abc/#Full_Paper">
+    <rdfs:subClassOf rdf:resource="http://www.upc.abc/#Paper"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.upc.abc/#Poster">
+    <rdfs:subClassOf rdf:resource="http://www.upc.abc/#Paper"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.upc.abc/#Journal">
+    <rdfs:subClassOf rdf:resource="http://www.upc.abc/#Venue"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.upc.abc/#Conference">
+    <rdfs:subClassOf rdf:resource="http://www.upc.abc/#Venue"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.upc.abc/#Short_Paper">
+    <rdfs:subClassOf rdf:resource="http://www.upc.abc/#Paper"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.upc.abc/#Review"/>
+  <rdfs:Class rdf:about="http://www.upc.abc/#Journal-Volume">
+    <rdfs:subClassOf rdf:resource="http://www.upc.abc/#Publications"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.upc.abc/#Demo_Paper">
+    <rdfs:subClassOf rdf:resource="http://www.upc.abc/#Paper"/>
+  </rdfs:Class>
+  <rdf:Property rdf:about="http://www.upc.abc/#authorName">
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:resource="http://www.upc.abc/#Author"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.upc.abc/#cHandledBy">
+    <rdfs:range rdf:resource="http://www.upc.abc/#Chair"/>
+    <rdfs:domain rdf:resource="http://www.upc.abc/#Conference"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.upc.abc/#publishedIn">
+    <rdfs:range rdf:resource="http://www.upc.abc/#Publications"/>
+    <rdfs:domain rdf:resource="http://www.upc.abc/#Paper"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.upc.abc/#writesA">
+    <rdfs:range rdf:resource="http://www.upc.abc/#Paper"/>
+    <rdfs:domain rdf:resource="http://www.upc.abc/#Author"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.upc.abc/#hasKeyword">
+    <rdfs:range rdf:resource="http://www.upc.abc/#Area_KeyWord"/>
+    <rdfs:domain rdf:resource="http://www.upc.abc/#Paper"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.upc.abc/#hasReview">
+    <rdfs:range rdf:resource="http://www.upc.abc/#Review"/>
+    <rdfs:domain rdf:resource="http://www.upc.abc/#Paper"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.upc.abc/#submitTo">
+    <rdfs:label xml:lang="en">Paper is submitted to venue</rdfs:label>
+    <rdfs:range rdf:resource="http://www.upc.abc/#Venue"/>
+    <rdfs:domain rdf:resource="http://www.upc.abc/#Paper"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.upc.abc/#reviewer">
+    <rdfs:range rdf:resource="http://www.upc.abc/#Author"/>
+    <rdfs:domain rdf:resource="http://www.upc.abc/#Review"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.upc.abc/#jHandledBy">
+    <rdfs:range rdf:resource="http://www.upc.abc/#Editor"/>
+    <rdfs:domain rdf:resource="http://www.upc.abc/#Journal"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.upc.abc/#hasText">
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:resource="http://www.upc.abc/#Review"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.upc.abc/#hasDecision">
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:domain rdf:resource="http://www.upc.abc/#Review"/>
+  </rdf:Property>
+</rdf:RDF>
