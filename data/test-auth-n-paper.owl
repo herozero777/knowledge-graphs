@@ -7,6 +7,7 @@
   <rdfs:Class rdf:about="http://www.upc.abc/#Area_KeyWord"/>
   <rdfs:Class rdf:about="http://www.upc.abc/#Venue"/>
   <rdfs:Class rdf:about="http://www.upc.abc/#Author"/>
+  <rdfs:Class rdf:about="http://www.upc.abc/#Year"/>
   <rdfs:Class rdf:about="http://www.upc.abc/#Conference-Proceedings">
     <rdfs:subClassOf>
       <rdfs:Class rdf:about="http://www.upc.abc/#Publications"/>
@@ -55,6 +56,22 @@
   <rdf:Property rdf:about="http://www.upc.abc/#hasKeyword">
     <rdfs:range rdf:resource="http://www.upc.abc/#Area_KeyWord"/>
     <rdfs:domain rdf:resource="http://www.upc.abc/#Paper"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.upc.abc/#hasArea">
+    <rdfs:range rdf:resource="http://www.upc.abc/#Area_KeyWord"/>
+    <rdfs:domain rdf:resource="http://www.upc.abc/#Venue"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.upc.abc/#hasYear">
+    <rdfs:range rdf:resource="http://www.upc.abc/#Year"/>
+    <rdfs:domain rdf:resource="http://www.upc.abc/#Publications"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.upc.abc/#hasProceedings">
+    <rdfs:range rdf:resource="http://www.upc.abc/#Conference-Proceedings"/>
+    <rdfs:domain rdf:resource="http://www.upc.abc/#Conference"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.upc.abc/#hasVolumes">
+    <rdfs:range rdf:resource="http://www.upc.abc/#Journal-Volume"/>
+    <rdfs:domain rdf:resource="http://www.upc.abc/#Journal"/>
   </rdf:Property>
   <rdf:Property rdf:about="http://www.upc.abc/#hasReview">
     <rdfs:range rdf:resource="http://www.upc.abc/#Review"/>

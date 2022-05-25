@@ -25,6 +25,12 @@ if __name__ == '__main__':
         df_hasReview = pd.read_csv("data/processed/small/hasReview.csv")
         df_keyword = pd.read_csv("data/processed/small/Keyword.csv")
         df_hasKeyword = pd.read_csv("data/processed/small/hasKeyword.csv")
+
+        df_venue = pd.read_csv("data/processed/small/Venue.csv")
+        df_publication = pd.read_csv("data/processed/small/Publication.csv")
+        df_hasArea = pd.read_csv("data/processed/small/hasArea.csv")
+        df_submitPaper = pd.read_csv("data/processed/small/submitPaper.csv")
+        df_publishPaper = pd.read_csv("data/processed/small/publishPaper.csv")
     else:
         df = pd.read_csv("data/raw/papers_data.csv")
 
@@ -36,6 +42,20 @@ if __name__ == '__main__':
     PaperTbox = URIRef("http://www.upc.abc/#Paper")
     FullPaperTbox = URIRef("http://www.upc.abc/#Full_Paper")
     ReviewTbox = URIRef("http://www.upc.abc/#Review")
+    Area_KeyWordTBox = URIRef("http://www.upc.abc/#Area_KeyWord")
+
+    VenueTbox = URIRef("http://www.upc.abc/#Venue")
+    JournalTbox = URIRef("http://www.upc.abc/#Journal")
+    ConferenceTbox = URIRef("http://www.upc.abc/#Conference")
+    
+    ChairTbox = URIRef("http://www.upc.abc/#Chair")
+    EditorTbox = URIRef("http://www.upc.abc/#Editor")
+
+    YearTbox = URIRef("http://www.upc.abc/#Year")
+    PublicationTbox = URIRef("http://www.upc.abc/#Publications")
+    CPTbox = URIRef("http://www.upc.abc/#Conference-Proceedings")
+    JVTbox = URIRef("http://www.upc.abc/#Journal-Volume")
+
     # Properties IRIs
     hasReviewIRI = URIRef(NS + "hasReview")
     reviewerIRI = URIRef(NS + "reviewer")
@@ -43,10 +63,19 @@ if __name__ == '__main__':
     hasTextIRI = URIRef(NS + "hasText")
     hasKeywordIRI = URIRef(NS + "hasKeyword")
 
-    # AssignedReviewerTbox = URIRef("http://www.upc.abc/#Assigned_Reviewer")
+    cHandledByIRI = URIRef(NS + "cHandledBy")
+    jHandledByIRI = URIRef(NS + "jHandledBy")
 
-    conf = Namespace("http://bdma.upc.abc/conference/")
-    schema = Namespace('http://schema.bdma.upc.abc/')
+    hasProceedingsIRI = URIRef(NS + "hasProceedings")
+    hasVolumesIRI = URIRef(NS + "hasVolumes")
+
+    submitPaperIRI = URIRef(NS + "submitTo")
+    publishPaperIRI = URIRef(NS + "publishedIn")
+
+    hasAreaIRI = URIRef(NS + "hasArea")
+    hasYearIRI = URIRef(NS + "hasYear")
+
+    # AssignedReviewerTbox = URIRef("http://www.upc.abc/#Assigned_Reviewer")
 
     ######################################################
     # Code Section
@@ -113,6 +142,77 @@ if __name__ == '__main__':
         # Connect instances of TBOX (ABOXes) via properties
         g.add((paperIRI, hasKeywordIRI, Literal(keyword)))
 
+    # link venue with area, handler
+    df = pd.merge(df_keyword, df_hasArea, on='keyword_id')
+    df = pd.merge(df, df_venue, on='venue_id')
+    for _, row in df.iterrows():
+        
+        venue_name = make_str_url_friendly(row["venue_name"])
+        keyword = make_str_url_friendly(row["keyword_name"])
+        handler = make_str_url_friendly(row["handler"])
+
+        areaIRI = URIRef(Area_KeyWordTBox + "/" + keyword)
+        g.add((areaIRI, RDF.type, Area_KeyWordTBox))
+        if row["venue_type"] == "Conference":
+            veneuIRI = URIRef(ConferenceTbox + "/" + venue_name)
+            g.add((veneuIRI, RDF.type, ConferenceTbox))
+            handlerIRI = URIRef(ChairTbox + "/" + handler)
+            g.add((handlerIRI, RDF.type, ChairTbox))
+            g.add((veneuIRI, cHandledByIRI, handlerIRI))
+        else:
+            veneuIRI = URIRef(JournalTbox + "/" + venue_name)
+            g.add((veneuIRI, RDF.type, JournalTbox))
+            handlerIRI = URIRef(EditorTbox + "/" + handler)
+            g.add((handlerIRI, RDF.type, EditorTbox))
+            g.add((veneuIRI, jHandledByIRI, handlerIRI))
+
+        g.add((veneuIRI, hasAreaIRI, areaIRI))
+
+    # link publication with venue
+    df = pd.merge(df_publication, df_venue, on='venue_id')
+    for _, row in df.iterrows():
+
+        publication_name = make_str_url_friendly(row["publication_name"])
+        venue_name = make_str_url_friendly(row["venue_name"])
+        publication_year = make_str_url_friendly(str(row["publication_year"]))
+
+        # Class IRI
+        if row["venue_type"] == "Conference":
+            publicationIRI = URIRef(CPTbox + "/" + publication_name)
+            g.add((publicationIRI, RDF.type, CPTbox))
+            veneuIRI = URIRef(ConferenceTbox + "/" + venue_name)
+            g.add((veneuIRI, hasProceedingsIRI, publicationIRI))
+        else:
+            publicationIRI = URIRef(JVTbox + "/" + publication_name)
+            g.add((publicationIRI, RDF.type, JVTbox))
+            veneuIRI = URIRef(JournalTbox + "/" + venue_name)
+            g.add((veneuIRI, hasVolumesIRI, publicationIRI))
+        yearIRI = URIRef(YearTbox + "/" + publication_year)
+        g.add((yearIRI, RDF.type, YearTbox))
+        g.add((publicationIRI, hasYearIRI, yearIRI))
+
+    # link paper with venue, publication
+    df = pd.merge(df_paper, df_publishPaper, on='paper_id')
+    df = pd.merge(df, df_publication, on='publication_id')
+    df = pd.merge(df, df_venue, on='venue_id')
+    for _, row in df.iterrows():
+
+        paper_name = make_str_url_friendly(row["paper_title"])
+        publication_name = make_str_url_friendly(row["publication_name"])
+        venue_name = make_str_url_friendly(row["venue_name"])
+        
+        veneuIRI = None
+        publicationIRI = None
+        if row["venue_type"] == "Conference":
+            publicationIRI = URIRef(CPTbox + "/" + publication_name)
+            veneuIRI = URIRef(ConferenceTbox + "/" + venue_name)
+        else:
+            publicationIRI = URIRef(JVTbox + "/" + publication_name)
+            veneuIRI = URIRef(JournalTbox + "/" + venue_name)
+        paperIRI = URIRef(FullPaperTbox + "/" + paper_name)
+
+        g.add((paperIRI, submitPaperIRI, veneuIRI))
+        g.add((paperIRI, publishPaperIRI, publicationIRI))
 
     print(" --- Completed Graph ---")
     print(f'file location: {join(OUTPUT_DIR, "test-auth-n-paper.nt")}')
