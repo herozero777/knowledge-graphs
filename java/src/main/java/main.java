@@ -31,15 +31,14 @@ public class main {
         OntClass venue = m.createClass( NS + "Venue" );
         OntClass conference = m.createClass( NS + "Conference" );
         OntClass journal = m.createClass( NS + "Journal" );
-
-        OntClass area_keyword = m.createClass( NS + "Area_KeyWord" );
         OntClass chair = m.createClass( NS + "Chair");
         OntClass editor = m.createClass(NS + "Editor");
-        OntClass publications = m.createClass(NS + "Publications");
-        OntClass conferenceProceedings = m.createClass(NS + "Conference-Proceedings");
-        OntClass journalVolume = m.createClass(NS + "Journal-Volume");
+        OntClass publication = m.createClass(NS + "Publication");
+        OntClass conferenceProceedings = m.createClass(NS + "Conference_Proceedings");
+        OntClass journalVolume = m.createClass(NS + "Journal_Volume");
 
         OntClass review = m.createClass(NS + "Review");
+        OntClass year = m.createClass(NS + "Year");
 
         // Connecting Classes to sub-Classes
         paper.addSubClass( poster );
@@ -49,10 +48,12 @@ public class main {
         venue.addSubClass( conference );
         venue.addSubClass( journal );
 
-        publications.addSubClass( conferenceProceedings );
-        publications.addSubClass( journalVolume );
+        publication.addSubClass( conferenceProceedings );
+        publication.addSubClass( journalVolume );
 
         // Properties
+        OntProperty writesA = m.createOntProperty(NS + "writesA");
+        OntProperty authorName = m.createOntProperty(NS + "authorName");
         OntProperty hasKeyword = m.createOntProperty(NS + "hasKeyword");
         OntProperty submittedTo = m.createOntProperty(NS + "submitTo");
         OntProperty cHandledBy = m.createOntProperty(NS + "cHandledBy");
@@ -62,8 +63,11 @@ public class main {
         OntProperty hasDecision = m.createOntProperty(NS + "hasDecision");
         OntProperty hasText = m.createOntProperty(NS + "hasText");
         OntProperty publishedIn = m.createOntProperty(NS + "publishedIn");
-        OntProperty writesA = m.createOntProperty(NS + "writesA");
-        OntProperty authorName = m.createOntProperty(NS + "authorName");
+        OntProperty ofArea = m.createOntProperty(NS + "ofArea");
+        OntProperty hasVolume = m.createOntProperty(NS + "hasVolume");
+        OntProperty hasProceedings = m.createOntProperty(NS + "hasProceedings");
+        OntProperty jHasYears = m.createOntProperty(NS + "jHasYears");
+        OntProperty cHasYears = m.createOntProperty(NS + "cHasYears");
 
         // Connecting properties to classes
         authorName.addDomain( author );
@@ -71,7 +75,9 @@ public class main {
         writesA.addDomain( author );
         writesA.addRange( paper );
         hasKeyword.addDomain( paper );
-        hasKeyword.addRange( area_keyword );
+        hasKeyword.addRange( RDFS.Literal );
+        ofArea.addDomain( venue );
+        ofArea.addRange( RDFS.Literal );
         submittedTo.addDomain( paper );
         submittedTo.addRange( venue );
         submittedTo.addLabel("Paper is submitted to venue", "en");
@@ -81,9 +87,16 @@ public class main {
 
         cHandledBy.addDomain( conference );
         cHandledBy.addRange( chair );
-
+        hasProceedings.addDomain( conference );
+        hasProceedings.addRange( conferenceProceedings );
+        cHasYears.addDomain( conferenceProceedings );
+        cHasYears.addRange( year );
         jHandledBy.addDomain( journal );
         jHandledBy.addRange( editor );
+        hasVolume.addDomain( journal );
+        hasVolume.addRange( journalVolume );
+        jHasYears.addDomain( journalVolume );
+        jHasYears.addRange( year );
 
         reviewer.addDomain( review );
         reviewer.addRange( author );
@@ -95,7 +108,7 @@ public class main {
         hasText.addRange( RDFS.Literal );
 
         publishedIn.addDomain( paper );
-        publishedIn.addRange( publications );
+        publishedIn.addRange( publication );
 
         // Write the model in XML format to the std-out
         m.write(System.out);

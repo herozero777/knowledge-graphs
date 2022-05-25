@@ -12,6 +12,10 @@ The predicate names defined in the ontology language correspond to the accessor 
 
 What does the above mean?
 
+Q 2):
+It is okay to use same property name in TBOXes. E.g. Conference_Proceedings will have an year and Journal_Volume will have an year. So can I go like for both "hasYear" property? 
+I'm asking because I vaguely remember maybe professor said that not to do this.
+
 ## Notes on Knowledge Graphs
 
 ### SPARQL 

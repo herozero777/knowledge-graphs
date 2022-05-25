@@ -1,114 +1,189 @@
-<http://www.upc.abc/#Review/2-57209824884> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Review> .
-<http://www.upc.abc/#Author/Bunnell_S_> <http://www.upc.abc/#authorName> "Bunnell_S_" .
-<http://www.upc.abc/#Full_Paper/Self_assessment_of_Proficiency_of_Intelligent_Systems__Challenges_and_Opportunities> <http://www.upc.abc/#hasReview> <http://www.upc.abc/#Review/1-24758929200> .
-<http://www.upc.abc/#Review/4-57196952707> <http://www.upc.abc/#hasText> "rejected" .
-<http://www.upc.abc/#Author/Hajimirzaie_S_M_> <http://www.upc.abc/#authorName> "Hajimirzaie_S_M_" .
-<http://www.upc.abc/#Author/Ames_D_C_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
-<http://www.upc.abc/#Review/4-6603410853> <http://www.upc.abc/#hasDecision> "sigh" .
-<http://www.upc.abc/#Review/1-57209881955> <http://www.upc.abc/#reviewer> <http://www.upc.abc/#Author/Ames_D_C_> .
-<http://www.upc.abc/#Review/3-8421746800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Review> .
 <http://www.upc.abc/#Author/Hotchkiss_R_H_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
-<http://www.upc.abc/#Review/1-57201864184> <http://www.upc.abc/#hasDecision> "I like the paper" .
-<http://www.upc.abc/#Author/Boaventura_Cunha_J_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
-<http://www.upc.abc/#Author/Hendrickson_N_R_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
-<http://www.upc.abc/#Review/3-55681652500> <http://www.upc.abc/#hasText> "rejected" .
-<http://www.upc.abc/#Author/Hotchkiss_R_H_> <http://www.upc.abc/#authorName> "Hotchkiss_R_H_" .
-<http://www.upc.abc/#Review/2-6701421652> <http://www.upc.abc/#reviewer> <http://www.upc.abc/#Author/Fourment_L_> .
-<http://www.upc.abc/#Author/Goodrich_M_A_> <http://www.upc.abc/#writesA> <http://www.upc.abc/#Full_Paper/Self_assessment_of_Proficiency_of_Intelligent_Systems__Challenges_and_Opportunities> .
-<http://www.upc.abc/#Full_Paper/Bridging_theory_to_practice__Feedforward_and_cascade_control_with_tclab_arduino_kit> <http://www.upc.abc/#hasReview> <http://www.upc.abc/#Review/2-57209824884> .
-<http://www.upc.abc/#Author/Bunnell_S_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
-<http://www.upc.abc/#Author/Dahlin_E_C_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
-<http://www.upc.abc/#Review/4-6603410853> <http://www.upc.abc/#hasText> "rejected" .
-<http://www.upc.abc/#Author/de_Moura_Oliveira_P_B_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
-<http://www.upc.abc/#Full_Paper/Self_assessment_of_Proficiency_of_Intelligent_Systems__Challenges_and_Opportunities> <http://www.upc.abc/#hasReview> <http://www.upc.abc/#Review/1-57209881955> .
-<http://www.upc.abc/#Author/Fourment_L_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
-<http://www.upc.abc/#Full_Paper/Bridging_theory_to_practice__Feedforward_and_cascade_control_with_tclab_arduino_kit> <http://www.upc.abc/#hasKeyword> "Human engineering" .
-<http://www.upc.abc/#Review/4-8517650500> <http://www.upc.abc/#hasText> "rejected" .
-<http://www.upc.abc/#Author/Maccarty_N_A_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
-<http://www.upc.abc/#Review/1-57201864184> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Review> .
-<http://www.upc.abc/#Author/Error_B_M_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
-<http://www.upc.abc/#Review/4-57196952707> <http://www.upc.abc/#hasDecision> "Paper lacks some things" .
-<http://www.upc.abc/#Author/de_Moura_Oliveira_P_B_> <http://www.upc.abc/#writesA> <http://www.upc.abc/#Full_Paper/Bridging_theory_to_practice__Feedforward_and_cascade_control_with_tclab_arduino_kit> .
-<http://www.upc.abc/#Author/Gautam_A_> <http://www.upc.abc/#writesA> <http://www.upc.abc/#Full_Paper/Self_assessment_of_Proficiency_of_Intelligent_Systems__Challenges_and_Opportunities> .
-<http://www.upc.abc/#Author/Wu_J_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
-<http://www.upc.abc/#Full_Paper/Self_assessment_of_Proficiency_of_Intelligent_Systems__Challenges_and_Opportunities> <http://www.upc.abc/#hasKeyword> "Real-time application" .
-<http://www.upc.abc/#Full_Paper/Structural_design_space_exploration_using_principal_component_analysis> <http://www.upc.abc/#hasReview> <http://www.upc.abc/#Review/4-6603410853> .
-<http://www.upc.abc/#Author/Crandall_J_W_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
-<http://www.upc.abc/#Full_Paper/Self_assessment_of_Proficiency_of_Intelligent_Systems__Challenges_and_Opportunities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Full_Paper> .
-<http://www.upc.abc/#Review/1-57201864184> <http://www.upc.abc/#reviewer> <http://www.upc.abc/#Author/Johnson_C_> .
-<http://www.upc.abc/#Review/2-57209824884> <http://www.upc.abc/#hasDecision> "vale vale" .
-<http://www.upc.abc/#Review/3-57202580740> <http://www.upc.abc/#reviewer> <http://www.upc.abc/#Author/Error_B_M_> .
-<http://www.upc.abc/#Review/3-55681652500> <http://www.upc.abc/#hasDecision> "me no gusto paper" .
-<http://www.upc.abc/#Review/3-8421746800> <http://www.upc.abc/#hasDecision> "Me no likes paper" .
-<http://www.upc.abc/#Author/Hedengren_J_D_> <http://www.upc.abc/#authorName> "Hedengren_J_D_" .
-<http://www.upc.abc/#Review/2-6701421652> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Review> .
-<http://www.upc.abc/#Review/2-57209824884> <http://www.upc.abc/#hasText> "accapted" .
-<http://www.upc.abc/#Author/Jahanshad_N_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
-<http://www.upc.abc/#Full_Paper/Development_of_sediment_management_guidelines_for_small_to_medium_reservoirs> <http://www.upc.abc/#hasKeyword> "Decision mechanism" .
-<http://www.upc.abc/#Author/Gautam_A_> <http://www.upc.abc/#authorName> "Gautam_A_" .
-<http://www.upc.abc/#Author/Hotchkiss_R_H_> <http://www.upc.abc/#writesA> <http://www.upc.abc/#Full_Paper/Development_of_sediment_management_guidelines_for_small_to_medium_reservoirs> .
-<http://www.upc.abc/#Review/4-57196952707> <http://www.upc.abc/#reviewer> <http://www.upc.abc/#Author/Hendrickson_N_R_> .
-<http://www.upc.abc/#Full_Paper/Bridging_theory_to_practice__Feedforward_and_cascade_control_with_tclab_arduino_kit> <http://www.upc.abc/#hasKeyword> "Dependency graphs" .
-<http://www.upc.abc/#Review/1-24758929200> <http://www.upc.abc/#hasDecision> "This is an interesting study and the authors have collected a unique dataset using cuttingedge methodology. The paper is generally well written and structured" .
-<http://www.upc.abc/#Author/Hedengren_J_D_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
-<http://www.upc.abc/#Review/4-6603410853> <http://www.upc.abc/#reviewer> <http://www.upc.abc/#Author/Knotts_T_A_> .
-<http://www.upc.abc/#Author/Wilson_P_S_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
-<http://www.upc.abc/#Full_Paper/Development_of_sediment_management_guidelines_for_small_to_medium_reservoirs> <http://www.upc.abc/#hasReview> <http://www.upc.abc/#Review/3-55681652500> .
-<http://www.upc.abc/#Full_Paper/Bridging_theory_to_practice__Feedforward_and_cascade_control_with_tclab_arduino_kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Full_Paper> .
-<http://www.upc.abc/#Review/2-57209824884> <http://www.upc.abc/#reviewer> <http://www.upc.abc/#Author/Johnson_J_A_> .
-<http://www.upc.abc/#Author/Johnson_C_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
-<http://www.upc.abc/#Review/2-55764938300> <http://www.upc.abc/#reviewer> <http://www.upc.abc/#Author/Wilson_P_S_> .
-<http://www.upc.abc/#Full_Paper/Religion_focused_dating_apps__A_Q_methodology_study_on_the_uses_of_mutual> <http://www.upc.abc/#hasKeyword> "Security of data" .
-<http://www.upc.abc/#Author/Boaventura_Cunha_J_> <http://www.upc.abc/#authorName> "Boaventura_Cunha_J_" .
-<http://www.upc.abc/#Full_Paper/Religion_focused_dating_apps__A_Q_methodology_study_on_the_uses_of_mutual> <http://www.upc.abc/#hasKeyword> "Autonomous systems" .
-<http://www.upc.abc/#Full_Paper/Development_of_sediment_management_guidelines_for_small_to_medium_reservoirs> <http://www.upc.abc/#hasReview> <http://www.upc.abc/#Review/3-8421746800> .
-<http://www.upc.abc/#Full_Paper/Self_assessment_of_Proficiency_of_Intelligent_Systems__Challenges_and_Opportunities> <http://www.upc.abc/#hasKeyword> "Drones" .
-<http://www.upc.abc/#Full_Paper/Development_of_sediment_management_guidelines_for_small_to_medium_reservoirs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Full_Paper> .
-<http://www.upc.abc/#Author/Hedengren_J_D_> <http://www.upc.abc/#writesA> <http://www.upc.abc/#Full_Paper/Bridging_theory_to_practice__Feedforward_and_cascade_control_with_tclab_arduino_kit> .
-<http://www.upc.abc/#Full_Paper/Bridging_theory_to_practice__Feedforward_and_cascade_control_with_tclab_arduino_kit> <http://www.upc.abc/#hasReview> <http://www.upc.abc/#Review/2-6701421652> .
-<http://www.upc.abc/#Author/Goodrich_M_A_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
-<http://www.upc.abc/#Full_Paper/Development_of_sediment_management_guidelines_for_small_to_medium_reservoirs> <http://www.upc.abc/#hasKeyword> "Intelligent systems" .
-<http://www.upc.abc/#Author/Goodrich_M_A_> <http://www.upc.abc/#authorName> "Goodrich_M_A_" .
-<http://www.upc.abc/#Review/3-57202580740> <http://www.upc.abc/#hasDecision> "muy mal" .
-<http://www.upc.abc/#Author/Boaventura_Cunha_J_> <http://www.upc.abc/#writesA> <http://www.upc.abc/#Full_Paper/Bridging_theory_to_practice__Feedforward_and_cascade_control_with_tclab_arduino_kit> .
-<http://www.upc.abc/#Review/4-8517650500> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Review> .
-<http://www.upc.abc/#Full_Paper/Structural_design_space_exploration_using_principal_component_analysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Full_Paper> .
-<http://www.upc.abc/#Review/3-57202580740> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Review> .
-<http://www.upc.abc/#Author/Bunnell_S_> <http://www.upc.abc/#writesA> <http://www.upc.abc/#Full_Paper/Structural_design_space_exploration_using_principal_component_analysis> .
-<http://www.upc.abc/#Review/1-57209881955> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Review> .
-<http://www.upc.abc/#Full_Paper/Structural_design_space_exploration_using_principal_component_analysis> <http://www.upc.abc/#hasReview> <http://www.upc.abc/#Review/4-8517650500> .
-<http://www.upc.abc/#Author/Knotts_T_A_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
-<http://www.upc.abc/#Full_Paper/Self_assessment_of_Proficiency_of_Intelligent_Systems__Challenges_and_Opportunities> <http://www.upc.abc/#hasReview> <http://www.upc.abc/#Review/1-57201864184> .
-<http://www.upc.abc/#Review/3-8421746800> <http://www.upc.abc/#reviewer> <http://www.upc.abc/#Author/Dahlin_E_C_> .
-<http://www.upc.abc/#Review/4-8517650500> <http://www.upc.abc/#hasDecision> "what ever" .
+<http://www.upc.abc/#Full_Paper/Structural_design_space_exploration_using_principal_component_analysis> <http://www.upc.abc/#submitTo> <http://www.upc.abc/#Conference/ACM_Symposium_on_Principles_of_Database_Systems> .
+<http://www.upc.abc/#Journal/Journal_of_Nondestructive_Evaluation> <http://www.upc.abc/#hasArea> <http://www.upc.abc/#Area_KeyWord/Real_time_systems> .
 <http://www.upc.abc/#Review/1-57209881955> <http://www.upc.abc/#hasText> "accapted" .
-<http://www.upc.abc/#Review/1-57201864184> <http://www.upc.abc/#hasText> "accapted" .
-<http://www.upc.abc/#Full_Paper/Bridging_theory_to_practice__Feedforward_and_cascade_control_with_tclab_arduino_kit> <http://www.upc.abc/#hasReview> <http://www.upc.abc/#Review/2-55764938300> .
-<http://www.upc.abc/#Full_Paper/Structural_design_space_exploration_using_principal_component_analysis> <http://www.upc.abc/#hasReview> <http://www.upc.abc/#Review/4-57196952707> .
-<http://www.upc.abc/#Author/Johnson_J_A_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
-<http://www.upc.abc/#Review/3-8421746800> <http://www.upc.abc/#hasText> "rejected" .
-<http://www.upc.abc/#Full_Paper/Structural_design_space_exploration_using_principal_component_analysis> <http://www.upc.abc/#hasKeyword> "Causal relationships" .
-<http://www.upc.abc/#Author/Gautam_A_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
-<http://www.upc.abc/#Review/1-24758929200> <http://www.upc.abc/#reviewer> <http://www.upc.abc/#Author/Maccarty_N_A_> .
-<http://www.upc.abc/#Author/Hajimirzaie_S_M_> <http://www.upc.abc/#writesA> <http://www.upc.abc/#Full_Paper/Development_of_sediment_management_guidelines_for_small_to_medium_reservoirs> .
-<http://www.upc.abc/#Author/de_Moura_Oliveira_P_B_> <http://www.upc.abc/#authorName> "de_Moura_Oliveira_P_B_" .
-<http://www.upc.abc/#Author/Crandall_J_W_> <http://www.upc.abc/#authorName> "Crandall_J_W_" .
-<http://www.upc.abc/#Author/Hajimirzaie_S_M_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
-<http://www.upc.abc/#Review/4-57196952707> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Review> .
-<http://www.upc.abc/#Full_Paper/Structural_design_space_exploration_using_principal_component_analysis> <http://www.upc.abc/#hasKeyword> "Real time systems" .
-<http://www.upc.abc/#Review/3-55681652500> <http://www.upc.abc/#reviewer> <http://www.upc.abc/#Author/Wu_J_> .
-<http://www.upc.abc/#Review/1-57209881955> <http://www.upc.abc/#hasDecision> "Paper es interesante" .
-<http://www.upc.abc/#Review/2-55764938300> <http://www.upc.abc/#hasText> "accapted" .
-<http://www.upc.abc/#Review/3-57202580740> <http://www.upc.abc/#hasText> "rejected" .
-<http://www.upc.abc/#Review/2-55764938300> <http://www.upc.abc/#hasDecision> "el paper es bonito" .
-<http://www.upc.abc/#Review/1-24758929200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Review> .
-<http://www.upc.abc/#Full_Paper/Development_of_sediment_management_guidelines_for_small_to_medium_reservoirs> <http://www.upc.abc/#hasReview> <http://www.upc.abc/#Review/3-57202580740> .
-<http://www.upc.abc/#Review/2-55764938300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Review> .
-<http://www.upc.abc/#Review/4-8517650500> <http://www.upc.abc/#reviewer> <http://www.upc.abc/#Author/Jahanshad_N_> .
-<http://www.upc.abc/#Author/Crandall_J_W_> <http://www.upc.abc/#writesA> <http://www.upc.abc/#Full_Paper/Self_assessment_of_Proficiency_of_Intelligent_Systems__Challenges_and_Opportunities> .
-<http://www.upc.abc/#Review/2-6701421652> <http://www.upc.abc/#hasText> "accapted" .
-<http://www.upc.abc/#Review/3-55681652500> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Review> .
-<http://www.upc.abc/#Review/1-24758929200> <http://www.upc.abc/#hasText> "accapted" .
-<http://www.upc.abc/#Review/4-6603410853> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Review> .
+<http://www.upc.abc/#Author/Error_B_M_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
+<http://www.upc.abc/#Review/1-57209881955> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Review> .
+<http://www.upc.abc/#Journal-Volume/Journal_of_Nondestructive_Evaluation_volume_10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Journal-Volume> .
+<http://www.upc.abc/#Full_Paper/Structural_design_space_exploration_using_principal_component_analysis> <http://www.upc.abc/#publishedIn> <http://www.upc.abc/#Conference-Proceedings/7th_SPDS> .
+<http://www.upc.abc/#Journal/IEEE_Vehicular_Technology_Magazine> <http://www.upc.abc/#jHandledBy> <http://www.upc.abc/#Editor/Luo_A_> .
+<http://www.upc.abc/#Author/Hedengren_J_D_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
+<http://www.upc.abc/#Conference-Proceedings/7th_SPDS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Conference-Proceedings> .
+<http://www.upc.abc/#Review/1-57201864184> <http://www.upc.abc/#hasDecision> "I like the paper" .
+<http://www.upc.abc/#Conference/ACM_Symposium_on_Principles_of_Database_Systems> <http://www.upc.abc/#cHandledBy> <http://www.upc.abc/#Chair/Owens_A_> .
+<http://www.upc.abc/#Journal/Journal_of_Nondestructive_Evaluation> <http://www.upc.abc/#hasVolumes> <http://www.upc.abc/#Journal-Volume/Journal_of_Nondestructive_Evaluation_volume_4> .
+<http://www.upc.abc/#Author/Goodrich_M_A_> <http://www.upc.abc/#authorName> "Goodrich_M_A_" .
+<http://www.upc.abc/#Author/de_Moura_Oliveira_P_B_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
+<http://www.upc.abc/#Journal-Volume/Journal_of_Nondestructive_Evaluation_volume_10> <http://www.upc.abc/#hasYear> <http://www.upc.abc/#Year/2019> .
+<http://www.upc.abc/#Journal/Journal_of_Nondestructive_Evaluation> <http://www.upc.abc/#hasArea> <http://www.upc.abc/#Area_KeyWord/Human_engineering> .
 <http://www.upc.abc/#Review/2-6701421652> <http://www.upc.abc/#hasDecision> "muy bien" .
+<http://www.upc.abc/#Conference-Proceedings/11th_AISC> <http://www.upc.abc/#hasYear> <http://www.upc.abc/#Year/2011> .
+<http://www.upc.abc/#Full_Paper/Bridging_theory_to_practice__Feedforward_and_cascade_control_with_tclab_arduino_kit> <http://www.upc.abc/#publishedIn> <http://www.upc.abc/#Conference-Proceedings/12th_AISC> .
+<http://www.upc.abc/#Area_KeyWord/Real_time_systems> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Area_KeyWord> .
+<http://www.upc.abc/#Full_Paper/Development_of_sediment_management_guidelines_for_small_to_medium_reservoirs> <http://www.upc.abc/#hasReview> <http://www.upc.abc/#Review/3-8421746800> .
+<http://www.upc.abc/#Author/Crandall_J_W_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
+<http://www.upc.abc/#Full_Paper/Structural_design_space_exploration_using_principal_component_analysis> <http://www.upc.abc/#hasKeyword> "Causal relationships" .
+<http://www.upc.abc/#Conference-Proceedings/8th_CVPR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Conference-Proceedings> .
+<http://www.upc.abc/#Area_KeyWord/Human_engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Area_KeyWord> .
+<http://www.upc.abc/#Conference/Advances_in_Intelligent_Systems_and_Computing> <http://www.upc.abc/#hasProceedings> <http://www.upc.abc/#Conference-Proceedings/12th_AISC> .
+<http://www.upc.abc/#Full_Paper/Development_of_sediment_management_guidelines_for_small_to_medium_reservoirs> <http://www.upc.abc/#submitTo> <http://www.upc.abc/#Conference/Conference_on_Computer_Vision_and_Pattern_Recognition> .
+<http://www.upc.abc/#Author/Bunnell_S_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
+<http://www.upc.abc/#Review/3-57202580740> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Review> .
+<http://www.upc.abc/#Full_Paper/Structural_design_space_exploration_using_principal_component_analysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Full_Paper> .
+<http://www.upc.abc/#Full_Paper/Self_assessment_of_Proficiency_of_Intelligent_Systems__Challenges_and_Opportunities> <http://www.upc.abc/#hasReview> <http://www.upc.abc/#Review/1-24758929200> .
+<http://www.upc.abc/#Review/2-57209824884> <http://www.upc.abc/#hasDecision> "vale vale" .
+<http://www.upc.abc/#Year/2020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Year> .
+<http://www.upc.abc/#Review/1-57201864184> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Review> .
+<http://www.upc.abc/#Author/Johnson_J_A_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
+<http://www.upc.abc/#Author/Hajimirzaie_S_M_> <http://www.upc.abc/#writesA> <http://www.upc.abc/#Full_Paper/Development_of_sediment_management_guidelines_for_small_to_medium_reservoirs> .
+<http://www.upc.abc/#Author/Boaventura_Cunha_J_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
+<http://www.upc.abc/#Author/Gautam_A_> <http://www.upc.abc/#writesA> <http://www.upc.abc/#Full_Paper/Self_assessment_of_Proficiency_of_Intelligent_Systems__Challenges_and_Opportunities> .
+<http://www.upc.abc/#Review/4-6603410853> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Review> .
+<http://www.upc.abc/#Full_Paper/Self_assessment_of_Proficiency_of_Intelligent_Systems__Challenges_and_Opportunities> <http://www.upc.abc/#hasReview> <http://www.upc.abc/#Review/1-57201864184> .
+<http://www.upc.abc/#Review/3-55681652500> <http://www.upc.abc/#hasDecision> "me no gusto paper" .
+<http://www.upc.abc/#Review/3-55681652500> <http://www.upc.abc/#hasText> "rejected" .
+<http://www.upc.abc/#Review/4-8517650500> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Review> .
+<http://www.upc.abc/#Review/1-24758929200> <http://www.upc.abc/#reviewer> <http://www.upc.abc/#Author/Maccarty_N_A_> .
+<http://www.upc.abc/#Review/2-6701421652> <http://www.upc.abc/#reviewer> <http://www.upc.abc/#Author/Fourment_L_> .
+<http://www.upc.abc/#Full_Paper/Religion_focused_dating_apps__A_Q_methodology_study_on_the_uses_of_mutual> <http://www.upc.abc/#hasKeyword> "Security of data" .
+<http://www.upc.abc/#Author/Jahanshad_N_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
+<http://www.upc.abc/#Full_Paper/Religion_focused_dating_apps__A_Q_methodology_study_on_the_uses_of_mutual> <http://www.upc.abc/#hasKeyword> "Autonomous systems" .
+<http://www.upc.abc/#Conference-Proceedings/13th_AISC> <http://www.upc.abc/#hasYear> <http://www.upc.abc/#Year/2013> .
+<http://www.upc.abc/#Full_Paper/Bridging_theory_to_practice__Feedforward_and_cascade_control_with_tclab_arduino_kit> <http://www.upc.abc/#hasKeyword> "Dependency graphs" .
+<http://www.upc.abc/#Full_Paper/Structural_design_space_exploration_using_principal_component_analysis> <http://www.upc.abc/#hasReview> <http://www.upc.abc/#Review/4-57196952707> .
+<http://www.upc.abc/#Author/Johnson_C_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
+<http://www.upc.abc/#Review/2-55764938300> <http://www.upc.abc/#hasText> "accapted" .
+<http://www.upc.abc/#Conference/Advances_in_Intelligent_Systems_and_Computing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Conference> .
+<http://www.upc.abc/#Conference/International_Conference_on_Data_Mining> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Conference> .
+<http://www.upc.abc/#Journal/Journal_of_Nondestructive_Evaluation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Journal> .
+<http://www.upc.abc/#Conference/Conference_on_Computer_Vision_and_Pattern_Recognition> <http://www.upc.abc/#hasProceedings> <http://www.upc.abc/#Conference-Proceedings/8th_CVPR> .
+<http://www.upc.abc/#Chair/Kanazawa_A_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Chair> .
+<http://www.upc.abc/#Author/Gautam_A_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
+<http://www.upc.abc/#Review/1-57209881955> <http://www.upc.abc/#reviewer> <http://www.upc.abc/#Author/Ames_D_C_> .
+<http://www.upc.abc/#Review/4-57196952707> <http://www.upc.abc/#reviewer> <http://www.upc.abc/#Author/Hendrickson_N_R_> .
+<http://www.upc.abc/#Review/1-57209881955> <http://www.upc.abc/#hasDecision> "Paper es interesante" .
+<http://www.upc.abc/#Full_Paper/Bridging_theory_to_practice__Feedforward_and_cascade_control_with_tclab_arduino_kit> <http://www.upc.abc/#hasReview> <http://www.upc.abc/#Review/2-55764938300> .
+<http://www.upc.abc/#Conference/ACM_Symposium_on_Principles_of_Database_Systems> <http://www.upc.abc/#hasArea> <http://www.upc.abc/#Area_KeyWord/Database> .
+<http://www.upc.abc/#Review/4-6603410853> <http://www.upc.abc/#hasDecision> "sigh" .
+<http://www.upc.abc/#Journal-Volume/IEEE_Vehicular_Technology_Magazine_volume_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Journal-Volume> .
+<http://www.upc.abc/#Conference/Advances_in_Intelligent_Systems_and_Computing> <http://www.upc.abc/#cHandledBy> <http://www.upc.abc/#Chair/Kumar_A_> .
+<http://www.upc.abc/#Author/Crandall_J_W_> <http://www.upc.abc/#authorName> "Crandall_J_W_" .
+<http://www.upc.abc/#Author/Knotts_T_A_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
+<http://www.upc.abc/#Review/2-57209824884> <http://www.upc.abc/#hasText> "accapted" .
+<http://www.upc.abc/#Chair/Kumar_A_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Chair> .
+<http://www.upc.abc/#Conference/International_Conference_on_Data_Mining> <http://www.upc.abc/#hasProceedings> <http://www.upc.abc/#Conference-Proceedings/12th_ICDM> .
+<http://www.upc.abc/#Full_Paper/Development_of_sediment_management_guidelines_for_small_to_medium_reservoirs> <http://www.upc.abc/#hasReview> <http://www.upc.abc/#Review/3-55681652500> .
+<http://www.upc.abc/#Review/2-57209824884> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Review> .
+<http://www.upc.abc/#Review/2-55764938300> <http://www.upc.abc/#reviewer> <http://www.upc.abc/#Author/Wilson_P_S_> .
+<http://www.upc.abc/#Conference-Proceedings/12th_ICDM> <http://www.upc.abc/#hasYear> <http://www.upc.abc/#Year/2019> .
+<http://www.upc.abc/#Author/Goodrich_M_A_> <http://www.upc.abc/#writesA> <http://www.upc.abc/#Full_Paper/Self_assessment_of_Proficiency_of_Intelligent_Systems__Challenges_and_Opportunities> .
+<http://www.upc.abc/#Full_Paper/Self_assessment_of_Proficiency_of_Intelligent_Systems__Challenges_and_Opportunities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Full_Paper> .
+<http://www.upc.abc/#Full_Paper/Bridging_theory_to_practice__Feedforward_and_cascade_control_with_tclab_arduino_kit> <http://www.upc.abc/#submitTo> <http://www.upc.abc/#Conference/Advances_in_Intelligent_Systems_and_Computing> .
+<http://www.upc.abc/#Author/Bunnell_S_> <http://www.upc.abc/#writesA> <http://www.upc.abc/#Full_Paper/Structural_design_space_exploration_using_principal_component_analysis> .
+<http://www.upc.abc/#Chair/Barbu_A_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Chair> .
+<http://www.upc.abc/#Area_KeyWord/Database> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Area_KeyWord> .
+<http://www.upc.abc/#Journal/IEEE_Vehicular_Technology_Magazine> <http://www.upc.abc/#hasArea> <http://www.upc.abc/#Area_KeyWord/Security_of_data> .
+<http://www.upc.abc/#Author/Gautam_A_> <http://www.upc.abc/#authorName> "Gautam_A_" .
+<http://www.upc.abc/#Review/3-57202580740> <http://www.upc.abc/#hasText> "rejected" .
+<http://www.upc.abc/#Review/2-57209824884> <http://www.upc.abc/#reviewer> <http://www.upc.abc/#Author/Johnson_J_A_> .
+<http://www.upc.abc/#Author/Dahlin_E_C_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
+<http://www.upc.abc/#Full_Paper/Self_assessment_of_Proficiency_of_Intelligent_Systems__Challenges_and_Opportunities> <http://www.upc.abc/#hasKeyword> "Real-time application" .
+<http://www.upc.abc/#Editor/Zhang_A_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Editor> .
+<http://www.upc.abc/#Author/Hajimirzaie_S_M_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
+<http://www.upc.abc/#Author/Hedengren_J_D_> <http://www.upc.abc/#authorName> "Hedengren_J_D_" .
+<http://www.upc.abc/#Author/Crandall_J_W_> <http://www.upc.abc/#writesA> <http://www.upc.abc/#Full_Paper/Self_assessment_of_Proficiency_of_Intelligent_Systems__Challenges_and_Opportunities> .
+<http://www.upc.abc/#Editor/Chakrabarti_A_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Editor> .
+<http://www.upc.abc/#Editor/Luo_A_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Editor> .
+<http://www.upc.abc/#Review/4-57196952707> <http://www.upc.abc/#hasText> "rejected" .
+<http://www.upc.abc/#Review/4-6603410853> <http://www.upc.abc/#hasText> "rejected" .
+<http://www.upc.abc/#Area_KeyWord/Intelligent_systems> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Area_KeyWord> .
+<http://www.upc.abc/#Journal/IEEE_Vehicular_Technology_Magazine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Journal> .
+<http://www.upc.abc/#Review/3-57202580740> <http://www.upc.abc/#hasDecision> "muy mal" .
+<http://www.upc.abc/#Year/2019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Year> .
+<http://www.upc.abc/#Review/1-24758929200> <http://www.upc.abc/#hasText> "accapted" .
+<http://www.upc.abc/#Review/4-8517650500> <http://www.upc.abc/#hasText> "rejected" .
+<http://www.upc.abc/#Review/3-55681652500> <http://www.upc.abc/#reviewer> <http://www.upc.abc/#Author/Wu_J_> .
+<http://www.upc.abc/#Author/Bunnell_S_> <http://www.upc.abc/#authorName> "Bunnell_S_" .
+<http://www.upc.abc/#Review/2-55764938300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Review> .
+<http://www.upc.abc/#Author/Hotchkiss_R_H_> <http://www.upc.abc/#writesA> <http://www.upc.abc/#Full_Paper/Development_of_sediment_management_guidelines_for_small_to_medium_reservoirs> .
+<http://www.upc.abc/#Review/1-24758929200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Review> .
+<http://www.upc.abc/#Conference/ACM_Symposium_on_Principles_of_Database_Systems> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Conference> .
+<http://www.upc.abc/#Conference-Proceedings/13th_AISC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Conference-Proceedings> .
+<http://www.upc.abc/#Journal-Volume/IEEE_Vehicular_Technology_Magazine_volume_7> <http://www.upc.abc/#hasYear> <http://www.upc.abc/#Year/2020> .
+<http://www.upc.abc/#Journal/Journal_of_Nondestructive_Evaluation> <http://www.upc.abc/#hasVolumes> <http://www.upc.abc/#Journal-Volume/Journal_of_Nondestructive_Evaluation_volume_10> .
+<http://www.upc.abc/#Full_Paper/Development_of_sediment_management_guidelines_for_small_to_medium_reservoirs> <http://www.upc.abc/#hasKeyword> "Intelligent systems" .
+<http://www.upc.abc/#Conference/International_Conference_on_Data_Mining> <http://www.upc.abc/#cHandledBy> <http://www.upc.abc/#Chair/Kanazawa_A_> .
+<http://www.upc.abc/#Review/4-6603410853> <http://www.upc.abc/#reviewer> <http://www.upc.abc/#Author/Knotts_T_A_> .
+<http://www.upc.abc/#Author/de_Moura_Oliveira_P_B_> <http://www.upc.abc/#authorName> "de_Moura_Oliveira_P_B_" .
+<http://www.upc.abc/#Full_Paper/Religion_focused_dating_apps__A_Q_methodology_study_on_the_uses_of_mutual> <http://www.upc.abc/#submitTo> <http://www.upc.abc/#Conference/International_Conference_on_Data_Mining> .
+<http://www.upc.abc/#Conference/Advances_in_Intelligent_Systems_and_Computing> <http://www.upc.abc/#hasProceedings> <http://www.upc.abc/#Conference-Proceedings/11th_AISC> .
+<http://www.upc.abc/#Review/3-8421746800> <http://www.upc.abc/#hasDecision> "Me no likes paper" .
+<http://www.upc.abc/#Full_Paper/Structural_design_space_exploration_using_principal_component_analysis> <http://www.upc.abc/#hasReview> <http://www.upc.abc/#Review/4-8517650500> .
+<http://www.upc.abc/#Author/Hendrickson_N_R_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
+<http://www.upc.abc/#Review/2-6701421652> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Review> .
+<http://www.upc.abc/#Conference/Advances_in_Intelligent_Systems_and_Computing> <http://www.upc.abc/#hasArea> <http://www.upc.abc/#Area_KeyWord/Database> .
+<http://www.upc.abc/#Chair/Owens_A_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Chair> .
+<http://www.upc.abc/#Author/Goodrich_M_A_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
+<http://www.upc.abc/#Full_Paper/Self_assessment_of_Proficiency_of_Intelligent_Systems__Challenges_and_Opportunities> <http://www.upc.abc/#submitTo> <http://www.upc.abc/#Conference/Advances_in_Intelligent_Systems_and_Computing> .
+<http://www.upc.abc/#Conference/Conference_on_Computer_Vision_and_Pattern_Recognition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Conference> .
+<http://www.upc.abc/#Full_Paper/Self_assessment_of_Proficiency_of_Intelligent_Systems__Challenges_and_Opportunities> <http://www.upc.abc/#hasReview> <http://www.upc.abc/#Review/1-57209881955> .
+<http://www.upc.abc/#Conference/International_Conference_on_Data_Mining> <http://www.upc.abc/#hasArea> <http://www.upc.abc/#Area_KeyWord/Intelligent_systems> .
+<http://www.upc.abc/#Full_Paper/Development_of_sediment_management_guidelines_for_small_to_medium_reservoirs> <http://www.upc.abc/#hasKeyword> "Decision mechanism" .
+<http://www.upc.abc/#Review/3-8421746800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Review> .
+<http://www.upc.abc/#Journal/IEEE_Vehicular_Technology_Magazine> <http://www.upc.abc/#hasVolumes> <http://www.upc.abc/#Journal-Volume/IEEE_Vehicular_Technology_Magazine_volume_7> .
+<http://www.upc.abc/#Review/2-6701421652> <http://www.upc.abc/#hasText> "accapted" .
+<http://www.upc.abc/#Conference-Proceedings/12th_AISC> <http://www.upc.abc/#hasYear> <http://www.upc.abc/#Year/2012> .
+<http://www.upc.abc/#Conference-Proceedings/11th_AISC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Conference-Proceedings> .
+<http://www.upc.abc/#Review/4-57196952707> <http://www.upc.abc/#hasDecision> "Paper lacks some things" .
+<http://www.upc.abc/#Full_Paper/Self_assessment_of_Proficiency_of_Intelligent_Systems__Challenges_and_Opportunities> <http://www.upc.abc/#hasKeyword> "Database" .
+<http://www.upc.abc/#Full_Paper/Bridging_theory_to_practice__Feedforward_and_cascade_control_with_tclab_arduino_kit> <http://www.upc.abc/#hasKeyword> "Human engineering" .
+<http://www.upc.abc/#Review/4-8517650500> <http://www.upc.abc/#hasDecision> "what ever" .
+<http://www.upc.abc/#Conference/ACM_Symposium_on_Principles_of_Database_Systems> <http://www.upc.abc/#hasProceedings> <http://www.upc.abc/#Conference-Proceedings/7th_SPDS> .
+<http://www.upc.abc/#Conference/Advances_in_Intelligent_Systems_and_Computing> <http://www.upc.abc/#hasProceedings> <http://www.upc.abc/#Conference-Proceedings/13th_AISC> .
+<http://www.upc.abc/#Conference-Proceedings/12th_ICDM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Conference-Proceedings> .
+<http://www.upc.abc/#Full_Paper/Development_of_sediment_management_guidelines_for_small_to_medium_reservoirs> <http://www.upc.abc/#publishedIn> <http://www.upc.abc/#Conference-Proceedings/8th_CVPR> .
+<http://www.upc.abc/#Author/Hotchkiss_R_H_> <http://www.upc.abc/#authorName> "Hotchkiss_R_H_" .
+<http://www.upc.abc/#Review/2-55764938300> <http://www.upc.abc/#hasDecision> "el paper es bonito" .
+<http://www.upc.abc/#Review/3-57202580740> <http://www.upc.abc/#reviewer> <http://www.upc.abc/#Author/Error_B_M_> .
+<http://www.upc.abc/#Conference/Conference_on_Computer_Vision_and_Pattern_Recognition> <http://www.upc.abc/#cHandledBy> <http://www.upc.abc/#Chair/Barbu_A_> .
+<http://www.upc.abc/#Author/Boaventura_Cunha_J_> <http://www.upc.abc/#authorName> "Boaventura_Cunha_J_" .
+<http://www.upc.abc/#Review/1-24758929200> <http://www.upc.abc/#hasDecision> "This is an interesting study and the authors have collected a unique dataset using cuttingedge methodology. The paper is generally well written and structured" .
+<http://www.upc.abc/#Author/Fourment_L_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
+<http://www.upc.abc/#Author/Maccarty_N_A_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
+<http://www.upc.abc/#Journal/Journal_of_Nondestructive_Evaluation> <http://www.upc.abc/#jHandledBy> <http://www.upc.abc/#Editor/Chakrabarti_A_> .
+<http://www.upc.abc/#Full_Paper/Development_of_sediment_management_guidelines_for_small_to_medium_reservoirs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Full_Paper> .
+<http://www.upc.abc/#Review/3-8421746800> <http://www.upc.abc/#reviewer> <http://www.upc.abc/#Author/Dahlin_E_C_> .
+<http://www.upc.abc/#Author/Wu_J_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
+<http://www.upc.abc/#Conference-Proceedings/12th_AISC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Conference-Proceedings> .
+<http://www.upc.abc/#Conference-Proceedings/7th_SPDS> <http://www.upc.abc/#hasYear> <http://www.upc.abc/#Year/2015> .
+<http://www.upc.abc/#Full_Paper/Bridging_theory_to_practice__Feedforward_and_cascade_control_with_tclab_arduino_kit> <http://www.upc.abc/#hasReview> <http://www.upc.abc/#Review/2-57209824884> .
+<http://www.upc.abc/#Area_KeyWord/Security_of_data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Area_KeyWord> .
+<http://www.upc.abc/#Year/2011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Year> .
+<http://www.upc.abc/#Author/de_Moura_Oliveira_P_B_> <http://www.upc.abc/#writesA> <http://www.upc.abc/#Full_Paper/Bridging_theory_to_practice__Feedforward_and_cascade_control_with_tclab_arduino_kit> .
+<http://www.upc.abc/#Journal/Journal_of_Nondestructive_Evaluation> <http://www.upc.abc/#jHandledBy> <http://www.upc.abc/#Editor/Zhang_A_> .
+<http://www.upc.abc/#Journal-Volume/Journal_of_Nondestructive_Evaluation_volume_4> <http://www.upc.abc/#hasYear> <http://www.upc.abc/#Year/2020> .
+<http://www.upc.abc/#Review/3-55681652500> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Review> .
+<http://www.upc.abc/#Author/Hedengren_J_D_> <http://www.upc.abc/#writesA> <http://www.upc.abc/#Full_Paper/Bridging_theory_to_practice__Feedforward_and_cascade_control_with_tclab_arduino_kit> .
+<http://www.upc.abc/#Author/Ames_D_C_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
+<http://www.upc.abc/#Conference-Proceedings/8th_CVPR> <http://www.upc.abc/#hasYear> <http://www.upc.abc/#Year/2015> .
+<http://www.upc.abc/#Year/2012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Year> .
+<http://www.upc.abc/#Full_Paper/Bridging_theory_to_practice__Feedforward_and_cascade_control_with_tclab_arduino_kit> <http://www.upc.abc/#hasReview> <http://www.upc.abc/#Review/2-6701421652> .
+<http://www.upc.abc/#Full_Paper/Structural_design_space_exploration_using_principal_component_analysis> <http://www.upc.abc/#hasReview> <http://www.upc.abc/#Review/4-6603410853> .
+<http://www.upc.abc/#Full_Paper/Structural_design_space_exploration_using_principal_component_analysis> <http://www.upc.abc/#hasKeyword> "Real time systems" .
+<http://www.upc.abc/#Author/Hajimirzaie_S_M_> <http://www.upc.abc/#authorName> "Hajimirzaie_S_M_" .
+<http://www.upc.abc/#Author/Boaventura_Cunha_J_> <http://www.upc.abc/#writesA> <http://www.upc.abc/#Full_Paper/Bridging_theory_to_practice__Feedforward_and_cascade_control_with_tclab_arduino_kit> .
+<http://www.upc.abc/#Review/4-57196952707> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Review> .
+<http://www.upc.abc/#Review/4-8517650500> <http://www.upc.abc/#reviewer> <http://www.upc.abc/#Author/Jahanshad_N_> .
+<http://www.upc.abc/#Review/1-57201864184> <http://www.upc.abc/#hasText> "accapted" .
+<http://www.upc.abc/#Conference/Conference_on_Computer_Vision_and_Pattern_Recognition> <http://www.upc.abc/#hasArea> <http://www.upc.abc/#Area_KeyWord/Database> .
+<http://www.upc.abc/#Full_Paper/Development_of_sediment_management_guidelines_for_small_to_medium_reservoirs> <http://www.upc.abc/#hasReview> <http://www.upc.abc/#Review/3-57202580740> .
+<http://www.upc.abc/#Year/2015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Year> .
+<http://www.upc.abc/#Full_Paper/Self_assessment_of_Proficiency_of_Intelligent_Systems__Challenges_and_Opportunities> <http://www.upc.abc/#publishedIn> <http://www.upc.abc/#Conference-Proceedings/11th_AISC> .
+<http://www.upc.abc/#Full_Paper/Religion_focused_dating_apps__A_Q_methodology_study_on_the_uses_of_mutual> <http://www.upc.abc/#publishedIn> <http://www.upc.abc/#Conference-Proceedings/12th_ICDM> .
+<http://www.upc.abc/#Review/3-8421746800> <http://www.upc.abc/#hasText> "rejected" .
+<http://www.upc.abc/#Review/1-57201864184> <http://www.upc.abc/#reviewer> <http://www.upc.abc/#Author/Johnson_C_> .
+<http://www.upc.abc/#Author/Wilson_P_S_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Author> .
+<http://www.upc.abc/#Full_Paper/Bridging_theory_to_practice__Feedforward_and_cascade_control_with_tclab_arduino_kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Full_Paper> .
+<http://www.upc.abc/#Journal-Volume/Journal_of_Nondestructive_Evaluation_volume_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Journal-Volume> .
+<http://www.upc.abc/#Year/2013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.upc.abc/#Year> .
 
