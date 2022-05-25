@@ -67,8 +67,7 @@ public class main {
         OntProperty ofArea = m.createOntProperty(NS + "ofArea");
         OntProperty hasVolume = m.createOntProperty(NS + "hasVolume");
         OntProperty hasProceedings = m.createOntProperty(NS + "hasProceedings");
-        OntProperty jHasYears = m.createOntProperty(NS + "jHasYears");
-        OntProperty cHasYears = m.createOntProperty(NS + "cHasYears");
+        OntProperty hasYears = m.createOntProperty(NS + "hasYears");
 
         // Connecting properties to classes
         authorName.addDomain( author );
@@ -90,14 +89,12 @@ public class main {
         cHandledBy.addRange( chair );
         hasProceedings.addDomain( conference );
         hasProceedings.addRange( conferenceProceedings );
-        cHasYears.addDomain( conferenceProceedings );
-        cHasYears.addRange( year );
         jHandledBy.addDomain( journal );
         jHandledBy.addRange( editor );
         hasVolume.addDomain( journal );
         hasVolume.addRange( journalVolume );
-        jHasYears.addDomain( journalVolume );
-        jHasYears.addRange( year );
+        hasYears.addDomain( publication );
+        hasYears.addRange( year );
 
         reviewer.addDomain( review );
         reviewer.addRange( author );
@@ -111,7 +108,7 @@ public class main {
         publishedIn.addDomain( paper );
         publishedIn.addRange( publication );
 
-        // Write the model in XML format to the std-out
+        // Write the model in RDF/XML format to the std-out
         m.write(System.out);
     }
 

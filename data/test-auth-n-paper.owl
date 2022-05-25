@@ -45,10 +45,6 @@
     <rdfs:range rdf:resource="http://www.upc.abc/#Review"/>
     <rdfs:domain rdf:resource="http://www.upc.abc/#Paper"/>
   </rdf:Property>
-  <rdf:Property rdf:about="http://www.upc.abc/#jHasYears">
-    <rdfs:range rdf:resource="http://www.upc.abc/#Year"/>
-    <rdfs:domain rdf:resource="http://www.upc.abc/#Journal_Volume"/>
-  </rdf:Property>
   <rdf:Property rdf:about="http://www.upc.abc/#reviewer">
     <rdfs:range rdf:resource="http://www.upc.abc/#Author"/>
     <rdfs:domain rdf:resource="http://www.upc.abc/#Review"/>
@@ -57,13 +53,13 @@
     <rdfs:range rdf:resource="http://www.upc.abc/#Area_KeyWord"/>
     <rdfs:domain rdf:resource="http://www.upc.abc/#Venue"/>
   </rdf:Property>
+  <rdf:Property rdf:about="http://www.upc.abc/#hasYears">
+    <rdfs:range rdf:resource="http://www.upc.abc/#Year"/>
+    <rdfs:domain rdf:resource="http://www.upc.abc/#Publication"/>
+  </rdf:Property>
   <rdf:Property rdf:about="http://www.upc.abc/#jHandledBy">
     <rdfs:range rdf:resource="http://www.upc.abc/#Editor"/>
     <rdfs:domain rdf:resource="http://www.upc.abc/#Journal"/>
-  </rdf:Property>
-  <rdf:Property rdf:about="http://www.upc.abc/#cHasYears">
-    <rdfs:range rdf:resource="http://www.upc.abc/#Year"/>
-    <rdfs:domain rdf:resource="http://www.upc.abc/#Conference_Proceedings"/>
   </rdf:Property>
   <rdf:Property rdf:about="http://www.upc.abc/#hasVolume">
     <rdfs:range rdf:resource="http://www.upc.abc/#Journal_Volume"/>
