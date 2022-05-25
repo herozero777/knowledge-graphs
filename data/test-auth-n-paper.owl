@@ -3,16 +3,7 @@
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-<<<<<<< HEAD
   <rdfs:Class rdf:about="http://www.upc.abc/#Conference_Proceedings">
-=======
-  <rdfs:Class rdf:about="http://www.upc.abc/#Paper"/>
-  <rdfs:Class rdf:about="http://www.upc.abc/#Area_KeyWord"/>
-  <rdfs:Class rdf:about="http://www.upc.abc/#Venue"/>
-  <rdfs:Class rdf:about="http://www.upc.abc/#Author"/>
-  <rdfs:Class rdf:about="http://www.upc.abc/#Year"/>
-  <rdfs:Class rdf:about="http://www.upc.abc/#Conference-Proceedings">
->>>>>>> 0e7d5608412880c077e8034323ebb46f16563707
     <rdfs:subClassOf>
       <rdfs:Class rdf:about="http://www.upc.abc/#Publication"/>
     </rdfs:subClassOf>
@@ -21,6 +12,7 @@
   <rdfs:Class rdf:about="http://www.upc.abc/#Journal_Volume">
     <rdfs:subClassOf rdf:resource="http://www.upc.abc/#Publication"/>
   </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.upc.abc/#Area_KeyWord"/>
   <rdfs:Class rdf:about="http://www.upc.abc/#Venue"/>
   <rdfs:Class rdf:about="http://www.upc.abc/#Author"/>
   <rdfs:Class rdf:about="http://www.upc.abc/#Chair"/>
@@ -62,7 +54,7 @@
     <rdfs:domain rdf:resource="http://www.upc.abc/#Review"/>
   </rdf:Property>
   <rdf:Property rdf:about="http://www.upc.abc/#ofArea">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:range rdf:resource="http://www.upc.abc/#Area_KeyWord"/>
     <rdfs:domain rdf:resource="http://www.upc.abc/#Venue"/>
   </rdf:Property>
   <rdf:Property rdf:about="http://www.upc.abc/#jHandledBy">
@@ -94,31 +86,7 @@
     <rdfs:domain rdf:resource="http://www.upc.abc/#Author"/>
   </rdf:Property>
   <rdf:Property rdf:about="http://www.upc.abc/#hasKeyword">
-<<<<<<< HEAD
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-=======
     <rdfs:range rdf:resource="http://www.upc.abc/#Area_KeyWord"/>
-    <rdfs:domain rdf:resource="http://www.upc.abc/#Paper"/>
-  </rdf:Property>
-  <rdf:Property rdf:about="http://www.upc.abc/#hasArea">
-    <rdfs:range rdf:resource="http://www.upc.abc/#Area_KeyWord"/>
-    <rdfs:domain rdf:resource="http://www.upc.abc/#Venue"/>
-  </rdf:Property>
-  <rdf:Property rdf:about="http://www.upc.abc/#hasYear">
-    <rdfs:range rdf:resource="http://www.upc.abc/#Year"/>
-    <rdfs:domain rdf:resource="http://www.upc.abc/#Publications"/>
-  </rdf:Property>
-  <rdf:Property rdf:about="http://www.upc.abc/#hasProceedings">
-    <rdfs:range rdf:resource="http://www.upc.abc/#Conference-Proceedings"/>
-    <rdfs:domain rdf:resource="http://www.upc.abc/#Conference"/>
-  </rdf:Property>
-  <rdf:Property rdf:about="http://www.upc.abc/#hasVolumes">
-    <rdfs:range rdf:resource="http://www.upc.abc/#Journal-Volume"/>
-    <rdfs:domain rdf:resource="http://www.upc.abc/#Journal"/>
-  </rdf:Property>
-  <rdf:Property rdf:about="http://www.upc.abc/#hasReview">
-    <rdfs:range rdf:resource="http://www.upc.abc/#Review"/>
->>>>>>> 0e7d5608412880c077e8034323ebb46f16563707
     <rdfs:domain rdf:resource="http://www.upc.abc/#Paper"/>
   </rdf:Property>
   <rdf:Property rdf:about="http://www.upc.abc/#submitTo">
@@ -135,3 +103,4 @@
     <rdfs:domain rdf:resource="http://www.upc.abc/#Conference"/>
   </rdf:Property>
 </rdf:RDF>
+

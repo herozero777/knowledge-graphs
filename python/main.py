@@ -52,9 +52,9 @@ if __name__ == '__main__':
     EditorTbox = URIRef("http://www.upc.abc/#Editor")
 
     YearTbox = URIRef("http://www.upc.abc/#Year")
-    PublicationTbox = URIRef("http://www.upc.abc/#Publications")
-    CPTbox = URIRef("http://www.upc.abc/#Conference-Proceedings")
-    JVTbox = URIRef("http://www.upc.abc/#Journal-Volume")
+    PublicationTbox = URIRef("http://www.upc.abc/#Publication")
+    CPTbox = URIRef("http://www.upc.abc/#Conference_Proceedings")
+    JVTbox = URIRef("http://www.upc.abc/#Journal_Volume")
 
     # Properties IRIs
     hasReviewIRI = URIRef(NS + "hasReview")
@@ -135,12 +135,13 @@ if __name__ == '__main__':
     for _, row in df.iterrows():
 
         paper_name = make_str_url_friendly(row["paper_title"])
-        keyword = row["keyword_name"]
+        keyword = make_str_url_friendly(row["keyword_name"])
         # Class IRI
+        areaIRI = URIRef(Area_KeyWordTBox + "/" + keyword)
         paperIRI = URIRef(FullPaperTbox + "/" + paper_name)
 
         # Connect instances of TBOX (ABOXes) via properties
-        g.add((paperIRI, hasKeywordIRI, Literal(keyword)))
+        g.add((paperIRI, hasKeywordIRI, areaIRI))
 
     # link venue with area, handler
     df = pd.merge(df_keyword, df_hasArea, on='keyword_id')

@@ -37,6 +37,7 @@ public class main {
         OntClass conferenceProceedings = m.createClass(NS + "Conference_Proceedings");
         OntClass journalVolume = m.createClass(NS + "Journal_Volume");
 
+        OntClass area_keyword = m.createClass( NS + "Area_KeyWord");
         OntClass review = m.createClass(NS + "Review");
         OntClass year = m.createClass(NS + "Year");
 
@@ -75,9 +76,9 @@ public class main {
         writesA.addDomain( author );
         writesA.addRange( paper );
         hasKeyword.addDomain( paper );
-        hasKeyword.addRange( RDFS.Literal );
+        hasKeyword.addRange( area_keyword );
         ofArea.addDomain( venue );
-        ofArea.addRange( RDFS.Literal );
+        ofArea.addRange( area_keyword );
         submittedTo.addDomain( paper );
         submittedTo.addRange( venue );
         submittedTo.addLabel("Paper is submitted to venue", "en");
